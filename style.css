@@ -1,0 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.index {
+    z-index: -1;
+}
+
+#top {
+    padding: 30px;
+}
