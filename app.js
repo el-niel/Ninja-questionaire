@@ -1,5 +1,7 @@
 const correctAnswers = ['B', 'B', 'A', 'A'];
 const form = document.querySelector('.quiz-form');
+const result = document.querySelector('.result');
+const numScore = document.querySelector('.number');
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -19,5 +21,6 @@ form.addEventListener('submit', (e) => {
         }
     });
 
-    alert(score);
+    numScore.textContent = `${score}% Ninja`;
+    result.classList.remove('d-none');
 });
